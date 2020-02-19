@@ -12,4 +12,6 @@ print(df[df['Crop']=='Coconut '])       # Print all the Rows containing Coconut 
 
 print(df[df['Crop']=='Arecanut'].max())     # Print Max of the Row with Crop as Arecanut
 
-print(df['Area'].sum())     # Print the Sum of all the Area 
+print(df['Area'].sum())     # Print Max of the Row containing Coconut as Crop
+
+print(df[df['Crop']=='Coconut '].sum()['Area'])     # Print the Sum of the Area of Coconut as Crop
