@@ -8,10 +8,10 @@ df = pandas.DataFrame(data)
 
 print(df)   # Print the content of the DataFrame
 
-print(df[df['Crop']=='Coconut '])       # Print all the Rows containing Coconut as Crop
+print("Print all Coconut : ", df[df['Crop']=='Coconut '])       # Print all the Rows containing Coconut as Crop
 
-print(df[df['Crop']=='Arecanut'].max())     # Print Max of the Row with Crop as Arecanut
+print("Max Arecanut : ", df[df['Crop']=='Arecanut'].max())     # Print Max of the Row with Crop as Arecanut
 
-print(df['Area'].sum())     # Print Max of the Row containing Coconut as Crop
+print("Max of Coconut : ",df['Area'].sum())     # Print Max of the Row containing Coconut as Crop
 
-print(df[df['Crop']=='Coconut '].sum()['Area'])     # Print the Sum of the Area of Coconut as Crop
+print("Sum of Coconut : ",df[df['Crop']=='Coconut '].sum()['Area'])     # Print the Sum of the Area of Coconut as Crop
